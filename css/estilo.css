@@ -1,0 +1,482 @@
+body{
+	font-family: arial, verdana, sans serif, tahoma;
+	margin: 0;
+}
+
+/*start header*/
+header{
+	border-top: 5px solid #86c724;
+}
+
+div#logo{
+	padding-left: 50px;
+	float: left;
+}
+
+div#contato-social{
+	float: right;
+	padding-right: 50px;
+}
+
+div#logo h1{
+	float: right;
+	padding-left: 25px;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+div#logo span{
+	color: #86c724;
+}
+
+.contato, .social{
+	list-style: none;
+	float: left;
+}
+
+.contato li, .social li{display: inline;}
+
+.social img{
+	width: 16px;
+	border: 1px solid #000;
+	padding: 2px;
+}
+
+/*start menu*/
+.menu{
+	clear: both;
+	background-color: #000;
+	height: 42px;
+}
+
+.menu ul{
+	text-align: center;
+	list-style: none;
+	padding-top: 10px;
+}
+
+.menu li{display: inline;}
+
+.menu a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px 20px;
+	transition: background-color 0.5s;
+}
+
+.menu a:hover{
+	background-color: rgb(134,199,36);
+}
+
+/*start banner*/
+.banner{
+	height: 490px;
+	background-image: url(../imagens/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.titulo{
+	text-align: center;
+	padding-top: 180px;
+	color: #fff;
+	font-size: 50px;
+	font-weight: bold;
+	margin: 0;
+	font-style: italic;
+}
+
+/*start energia*/
+.energia{
+	padding: 25px 50px;
+	font-size: 18px;
+	text-align: justify;
+	background-image: linear-gradient(#1b3d58, #fff);
+}
+
+.titulo2{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 35px;
+	color: #86c724;
+}
+
+.energia img{
+	float: left;
+	padding-right: 20px;
+	width: 400px;
+}
+
+/*start blog*/
+.blog{
+	width: 1200px;
+	padding: 25px 50px;
+	/*margin: 0 auto;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.div-blog{
+	float: left;
+	width: 348px;
+	border: 1px solid #000;
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-bottom: 50px;
+	padding: 10px;
+	min-height: 365px;
+	position: relative;
+}
+
+.blog-img{
+	width: 100%;
+}
+
+.blog-titulo{
+	color: #f80;
+}
+
+.blog-link{
+	color: #fff;
+	text-decoration: none;
+	background-color: #86c724;
+	padding: 5px 10px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.blog-link:hover{
+	background-color: #f80;
+}
+
+/*start solucao*/
+.solucao{
+	clear: both;
+	height: 500px;
+	padding-top: 150px;
+	padding-bottom: 50px;
+	background-image: url(../imagens/bg-solucao.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.solucao-div{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.solucao-link{
+	text-decoration: none;
+	float: left;
+	color: #000;
+	width: 310px;
+	height: 390px;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding: 20px 30px;
+}
+
+.solucao-titulo{
+	font-size: 30px;
+	color: #fff;
+	min-height: 114px;
+}
+
+.solucao-texto{
+	font-weight: bold;
+	line-height: 25px;
+}
+
+.bg-solucao01{
+	background-color: rgba(7,69,114,0.6);
+}
+
+.bg-solucao01:hover{
+	background-color: rgba(7,69,114,1);
+}
+
+.bg-solucao02{
+	background-color: rgba(248,184,9,0.6);
+}
+
+.bg-solucao02:hover{
+	background-color: rgba(248,184,9,1);
+}
+
+.bg-solucao03{
+	background-color: rgba(64,171,243,0.6);
+}
+
+.bg-solucao03:hover{
+	background-color: rgba(64,171,243,1);
+}
+
+.divisor{
+	height: 3px;
+	border: 0;
+	width: 100px;
+	margin-left: 0;
+}
+
+.bg-yellow{
+	background-color: #fb0;
+}
+
+.bg-blue{
+	background-color: rgb(2,78,125);
+}
+
+.bg-white{
+	background-color: #fff;
+}
+
+/*start potencial*/
+.potencial{
+	padding: 50px;
+}
+
+.potencial-grid{
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.esquerda{
+	width: 525px;
+	float: left;
+	margin: 0 0 50px;
+	position: relative;
+}
+
+.direita{
+	width: 525px;
+	float: right;
+	margin: 0 0 50px;
+	position: relative;
+}
+
+.potencial img{
+	width: 100%;
+}
+
+.legenda{
+	position: absolute;
+	top: 60px;
+	left: 0;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.7);
+	color: #fff;
+	opacity: 0;
+	transition: all 0.5s;
+	height: 375px;
+}
+
+.esquerda:hover .legenda,
+.direita:hover .legenda{
+	opacity: 1;
+}
+
+.scale{
+	transform: scale(0,0);
+	transition: all 2s;
+}
+
+.esquerda:hover .scale{
+	transform: scale(1,1);
+}
+
+.direita:hover .scale{
+	transform: scale(1) rotate(360deg);
+}
+
+/*Custo*/
+.custo{
+	background-color: #ffd04c;
+	padding: 50px;
+	text-align: center;
+	clear: both;
+}
+
+.titulo3{
+	text-transform: uppercase;
+	color: #333;
+	font-size: 35px;
+}
+
+table{
+	margin: 0 auto;
+	border: 1px solid #000;
+	border-spacing: 0;
+	
+}
+
+td{
+	border: 1px solid #000;
+	padding: 10px;
+}
+
+th{
+	border:1px solid #000;
+	padding: 10px;
+	font-size: 24px;
+	background: rgb(1, 119, 139);
+	color: #fff;
+}
+
+.pizza{
+	background-color: #555;
+	color: #fff;
+	font-size: 18px;
+}
+
+/* start midia */
+.midia{
+	width: 1300px;
+	margin: 0 auto;
+}
+
+.video{
+	width: 600px;
+	float: left;
+	text-align: center;
+	padding: 25px;
+}
+
+video{
+	width: 500px;	
+
+}
+
+.audio{
+	width: 600px;
+	float: right;
+	padding: 25px;
+}
+
+/* start faleconosco  */
+.faleconosco{
+	clear: both;
+	border-top: 4px solid #86c724;
+	padding: 50px;
+	height: 450px;
+	background: url(../imagens/bg-faleconosco.png) no-repeat right;
+}
+
+.faleconosco h2{
+	text-shadow: 2px 2px 3px #444;
+}
+
+form{
+	width: 50%;
+	float: left;
+}
+
+form div{
+	width: 40%;
+	float: left;
+	margin: 5px;
+}
+
+input[type = "text"],
+input[type = "email"]{
+	width: 93%;
+	font-size: 18px;
+	border: 1px solid #000;
+	padding: 10px;
+}
+
+textarea{
+	width: 79%;
+	margin: 5px ;
+	border: 1px solid #000;
+	font-size: 18px;
+	padding: 10px;
+	font-family: arial;
+	resize: none;
+}
+
+.botoes{
+	text-align: center;
+	width: 100%;
+	
+}
+
+input[type="reset"],
+input[type="submit"]{
+	font-size: 20px;
+	border: none;
+	padding: 10px 20px;
+	color: #fff;
+	margin: 0 20px;
+	border-radius: 4px;
+	box-shadow: 2px 2px 4px #555;
+}
+
+input[type="reset"]{
+	background-color: #b00;
+	
+}
+input[type="submit"]{
+	background-color: #0b0;
+}
+input[type="reset"]:hover{
+	background-color: rgb(145, 30, 30);
+}
+input[type="submit"]:hover{
+	background-color: rgb(24, 139, 24);
+}
+
+/*Start Rodapé*/
+
+.rodape{
+	background-color: #222;
+	padding: 25px 50px 0;
+	color: #fff;
+	margin-top: 50px;
+}
+
+.endereco{
+	width: 30%;
+	float: left;
+	border-right: 1px solid #fff;
+	
+}
+
+.endereco h4{
+	text-transform: uppercase;
+	font-size: 22px;
+}
+
+.endereco span{
+	color: #86c724;
+}
+
+.endereco ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+.endereco img{
+	vertical-align: middle;
+}
+
+.mapa{
+	width: 65%;
+	float: right;
+
+}
+
+.mapa iframe{
+	width: 100%;
+	height: 200px;
+}
+
+.copy{
+	clear: both;
+	text-align: center;
+	border-top: 1px solid #fff;
+	padding: 15px 0 5px;
+}
